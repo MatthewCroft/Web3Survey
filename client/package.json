@@ -17,6 +17,7 @@
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.2",
     "react-scripts": "^3.4.0",
+    "uuid": "^8.3.2",
     "web3": "^1.6.1",
     "yup": "^0.32.11"
   },
@@ -45,5 +46,8 @@
       "not dead",
       "not op_mini all"
     ]
+  },
+  "devDependencies": {
+    "react-error-overlay": "^6.0.9"
   }
 }
