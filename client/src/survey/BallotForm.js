@@ -33,6 +33,8 @@ function BallotForm(props) {
     })
 
     const onSubmit = async(data) => {
+        var surveyName = null
+
         try {
 
             var options = []
@@ -42,16 +44,17 @@ function BallotForm(props) {
                 options.push(ans)
             }
 
-            var surveyName = props.web3.utils.randomHex(32)
+            surveyName = props.web3.utils.randomHex(32)
 
-            var actualSurveyName = await props.contract.methods.createVoteCard(options, surveyName).send({
+            await props.contract.methods.createVoteCard(options, surveyName).send({
                 from: props.accounts[0]
             });
-
-            console.log(actualSurveyName);
-
         } catch(error) {
             console.log(error);
+        }
+
+        if (surveyName != null) {
+            alert(`Use this id to search for and vote in the survey you created: ` + surveyName);
         }
         console.log(data.ballot);
     };

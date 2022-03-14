@@ -18,7 +18,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -79,7 +80,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -103,7 +105,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -127,7 +130,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32[]\",\"name\":\"options_\",\"type\":\"bytes32[]\"},{\"internalType\":\"bytes32\",\"name\":\"surveyName\",\"type\":\"bytes32\"}],\"name\":\"createVoteCard\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"survey\",\"type\":\"bytes32\"}],\"name\":\"getPollOptions\",\"outputs\":[{\"internalType\":\"bytes32[]\",\"name\":\"\",\"type\":\"bytes32[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"survey\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"getPollVotedUser\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"survey\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"option\",\"type\":\"bytes32\"}],\"name\":\"getSurveyOptionResult\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"surveys\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"survey\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"option\",\"type\":\"bytes32\"}],\"name\":\"vote\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Survey.sol\":\"Survey\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Survey.sol\":{\"keccak256\":\"0xa6324582e80936d063a18607c79c9f776aa2e930f17b48b8a36ba04b551bde43\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://a2c115b78b7a488978d0c6b0f41e68c06053ac6b212296ed520144eb716f0c02\",\"dweb:/ipfs/QmS45TMLr3Mo6DKvcR48jQn6p2jKnXU1qfnHPTUr77SahC\"]}},\"version\":1}",
@@ -8202,12 +8206,13 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x1AB850f602524dB0aaaD147dd1056db028f5a81C",
-      "transactionHash": "0x6601701a018b8550783f754efd74c0bcb9083f45f996ebaec67ceafb8068440c"
+      "address": "0x1d056cB8dE982E69c395dF9f39FE7e526Ab1FF06",
+      "transactionHash": "0xd9f739752c9040d6c4f56555b200b4c07205c5b9eb70baf04eb425364d001f1b"
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-03-13T16:47:14.177Z",
+  "updatedAt": "2022-03-13T17:47:39.967Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

@@ -11,11 +11,10 @@ contract Survey {
         bytes32[] options;
     }
 
-    function createVoteCard(bytes32[] calldata options_, bytes32 surveyName) external returns (bytes32) {
+    function createVoteCard(bytes32[] calldata options_, bytes32 surveyName) external {
         PollCard storage poll = surveys[surveyName];
         poll.owner = msg.sender;
         poll.options = options_;
-        return surveyName;
     }
 
     function vote(bytes32 survey, bytes32 option) external {
